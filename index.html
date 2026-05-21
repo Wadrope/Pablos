@@ -1,50 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#020617">
+    <meta name="description" content="Finance & Data Analytics Professional | Payroll, Financial Reporting, Power BI, Excel - Based in Nairobi, Kenya">
+    <meta name="keywords" content="Finance, Data Analytics, Payroll, Power BI, Excel, Business Intelligence, Financial Reporting">
+    <meta property="og:title" content="Paul Okumu - Finance & Data Analytics Professional">
+    <meta property="og:description" content="Accounting and finance professional with hands-on experience in payroll, financial reporting, and data analytics">
+    <meta property="og:type" content="website">
+    
     <title>Paul Okumu - Finance & Data Analytics Professional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-body {
-    overflow-x: hidden;
-}
+        html, body {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
 
-p {
-    word-break: break-word;
-}
+        p {
+            word-break: break-word;
+        }
 
-.glow {
-    box-shadow: 0 0 40px rgba(37, 99, 235, 0.3);
-}
+        .glow {
+            box-shadow: 0 0 40px rgba(37, 99, 235, 0.3);
+        }
 
-/* Mobile menu styles */
-.mobile-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: rgba(2, 6, 23, 0.95);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(30, 41, 59, 1);
-}
+        /* Mobile menu styles */
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(2, 6, 23, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(30, 41, 59, 1);
+            animation: slideDown 0.3s ease-out;
+        }
 
-.mobile-menu.active {
-    display: block;
-}
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.mobile-menu a {
-    display: block;
-    padding: 0.75rem 2rem;
-    text-align: center;
-    border-bottom: 1px solid rgba(30, 41, 59, 1);
-}
-</style>
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 0.75rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(30, 41, 59, 1);
+            transition: background-color 0.2s;
+        }
+
+        .mobile-menu a:hover {
+            background-color: rgba(37, 99, 235, 0.1);
+        }
+
+        /* Focus styles for accessibility */
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid rgb(59, 130, 246);
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 <body class="min-h-screen bg-slate-950 text-white font-sans">
-<a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-blue-600 focus:px-4 focus:py-2">Skip to main content</a>
 
 <nav class="fixed top-0 left-0 w-full bg-slate-950/80 backdrop-blur-lg border-b border-slate-800 z-50">
     <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
@@ -62,7 +92,7 @@ p {
         </div>
 
         <div class="md:hidden">
-            <button id="mobile-menu-btn" class="text-white text-2xl p-2" aria-label="Toggle menu" aria-expanded="false">
+            <button id="mobile-menu-btn" class="text-white text-2xl p-2" aria-label="Toggle navigation menu" aria-expanded="false">
                 ☰
             </button>
         </div>
@@ -109,7 +139,7 @@ p {
             <div class="flex justify-center">
                 <div class="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-3xl bg-gradient-to-br from-blue-500 to-slate-800 p-1 shadow-2xl overflow-hidden glow">
                     <div class="w-full h-full rounded-3xl overflow-hidden bg-slate-900">
-                        <img src="Images/IMG-20260428-WA0003.jpg" alt="Paul Okumu - Finance and Data Analytics Professional" class="w-full h-full object-cover">
+                        <img src="Images/IMG-20260428-WA0003.jpg" alt="Paul Okumu - Finance and Data Analytics Professional" class="w-full h-full object-cover" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -232,7 +262,7 @@ p {
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 hover:scale-105 transition-all duration-300">
-                    <img src="Images/Emlpyee Revenue Dashboard.png" alt="Payroll Analytics Dashboard showing trends and deductions" class="w-full h-48 object-cover">
+                    <img src="Images/Emlpyee Revenue Dashboard.png" alt="Payroll Analytics Dashboard showing employee revenue trends and deductions" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-8">
                         <h3 class="text-2xl font-semibold mb-4">Payroll Analytics Dashboard</h3>
                         <p class="text-slate-300 mb-6">Built a dashboard to analyze payroll trends, deductions, and payment summaries.</p>
@@ -244,7 +274,7 @@ p {
                 </div>
 
                 <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 hover:scale-105 transition-all duration-300">
-                    <img src="Images/Sales Revenue.webp" alt="Sales and Revenue Analysis dashboard with metrics" class="w-full h-48 object-cover">
+                    <img src="Images/Sales Revenue.webp" alt="Sales and Revenue Analysis dashboard displaying key performance metrics" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-8">
                         <h3 class="text-2xl font-semibold mb-4">Sales & Revenue Analysis</h3>
                         <p class="text-slate-300 mb-6">Analyzed sales performance data to identify trends and support better business decisions.</p>
@@ -256,7 +286,7 @@ p {
                 </div>
 
                 <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 hover:scale-105 transition-all duration-300 md:col-span-2 lg:col-span-1">
-                    <img src="Images/Personal Budget Tracker.png" alt="Personal Finance Tracker for budgeting and investments" class="w-full h-48 object-cover">
+                    <img src="Images/Personal Budget Tracker.png" alt="Personal Finance Tracker application for budgeting and investment monitoring" class="w-full h-48 object-cover" loading="lazy">
                     <div class="p-8">
                         <h3 class="text-2xl font-semibold mb-4">Personal Finance Tracker</h3>
                         <p class="text-slate-300 mb-6">Developed a finance tracking system for budgeting, saving, and investment monitoring.</p>
@@ -275,7 +305,7 @@ p {
             <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
             <p class="text-slate-300 text-lg mb-10">Open to accounting, finance, payroll, data analytics, and business intelligence opportunities.</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
-                <a href="tel:+254719552812" class="bg-slate-800 rounded-2xl p-6 hover:bg-slate-700 transition-all block">
+                <a href="tel:+254719553812" class="bg-slate-800 rounded-2xl p-6 hover:bg-slate-700 transition-all block">
                     <p class="text-slate-400 mb-2">Phone</p>
                     <p class="font-medium">+254 719 553 812</p>
                 </a>
@@ -313,6 +343,14 @@ p {
             mobileMenu.classList.remove('active');
             mobileMenuBtn.setAttribute('aria-expanded', false);
         });
+    });
+    
+    // Close mobile menu on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active');
+            mobileMenuBtn.setAttribute('aria-expanded', false);
+        }
     });
 </script>
 </body>
